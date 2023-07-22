@@ -1,0 +1,97 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.CostSensitiveClassifier -cost-matrix "[0.0 200.0 1.0 1.0 1.0 1.0 1.0 1.0; 1.0 0.0 1.0 1.0 1.0 1.0 1.0 1.0; 1.0 50.0 0.0 100.0 400.0 1.0 1.0 1.0; 1.0 1.0 100.0 0.0 100.0 200.0 1.0 1.0; 1.0 1.0 1.0 1.0 0.0 1.0 1.0 1.0; 1.0 1.0 1.0 100.0 1.0 0.0 1.0 1.0; 1.0 1.0 1.0 1.0 1.0 1.0 0.0 1.0; 1.0 1.0 1.0 1.0 1.0 1.0 1.0 0.0]" -S 1 -W weka.classifiers.bayes.NaiveBayes --
+Relation:     RFM
+Instances:    3000
+Attributes:   4
+              R
+              F
+              M
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.bayes.NaiveBayes 
+
+Classifier Model
+Naive Bayes Classifier
+
+                        Class
+Attribute          poly-kalos         pistos       avevaios       efkairia      adiaforos palia-eykairia   proin-pistos    proin-kalos
+                        (0.2)            (0)         (0.64)         (0.08)         (0.02)         (0.05)            (0)            (0)
+=======================================================================================================================================
+R
+  mean                 29.4031        39.6365        38.0401         46.687       235.8507       230.2086       182.6942       183.6114
+  std. dev.            30.5526        35.7272         34.857         36.091        78.4185         73.703        55.8472        53.1195
+  weight sum          608.1305         5.0082      1928.2689       247.3825        60.8659       139.3799          4.557         6.4069
+  precision             1.1487         1.1487         1.1487         1.1487         1.1487         1.1487         1.1487         1.1487
+
+F
+  mean                 10.0599         4.0347         1.5714         1.5714         1.5714         1.5714          3.703         4.9245
+  std. dev.             8.7506         1.1672         0.2619         0.2619         0.2619         0.2619         0.9005         3.0883
+  weight sum          608.1305         5.0082      1928.2689       247.3825        60.8659       139.3799          4.557         6.4069
+  precision             1.5714         1.5714         1.5714         1.5714         1.5714         1.5714         1.5714         1.5714
+
+M
+  mean               5714.5926       480.1993       218.4483      1646.5189       234.0459      1420.2177       445.3763      2487.9467
+  std. dev.          7111.6647       181.6274       183.2566      1729.6416       185.2436       838.5921       208.7532      2674.8127
+  weight sum          608.1305         5.0082      1928.2689       247.3825        60.8659       139.3799          4.557         6.4069
+  precision            49.8151        49.8151        49.8151        49.8151        49.8151        49.8151        49.8151        49.8151
+
+
+
+Cost Matrix
+   0 200   1   1   1   1   1   1
+   1   0   1   1   1   1   1   1
+   1  50   0 100 400   1   1   1
+   1   1 100   0 100 200   1   1
+   1   1   1   1   0   1   1   1
+   1   1   1 100   1   0   1   1
+   1   1   1   1   1   1   0   1
+   1   1   1   1   1   1   1   0
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        2592               86.4    %
+Incorrectly Classified Instances       408               13.6    %
+Kappa statistic                          0.822 
+Mean absolute error                      0.0546
+Root mean squared error                  0.1629
+Relative absolute error                 29.8438 %
+Root relative squared error             53.8524 %
+Coverage of cases (0.95 level)          99.2667 %
+Mean rel. region size (0.95 level)      22.8    %
+Total Number of Instances             3000     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,987    0,008    0,956      0,987    0,971      0,966    0,997     0,972     poly-kalos
+                 0,667    0,001    0,949      0,667    0,783      0,789    0,997     0,936     pistos
+                 0,998    0,082    0,728      0,998    0,842      0,817    0,997     0,990     avevaios
+                 0,968    0,001    0,968      0,968    0,968      0,967    0,987     0,979     efkairia
+                 0,764    0,001    0,999      0,764    0,866      0,800    0,999     0,999     adiaforos
+                 0,975    0,052    0,578      0,975    0,726      0,730    0,988     0,950     palia-eykairia
+                 0,941    0,008    0,798      0,941    0,864      0,862    0,998     0,961     proin-pistos
+                 0,775    0,003    0,924      0,775    0,843      0,839    0,977     0,915     proin-kalos
+Weighted Avg.    0,864    0,020    0,902      0,864    0,867      0,832    0,996     0,982     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f    g    h   <-- classified as
+  452    2    0    0    0    0    2    2 |    a = poly-kalos
+   11   74   19    0    0    0    7    0 |    b = pistos
+    0    0  539    1    0    0    0    0 |    c = avevaios
+    2    0    1   92    0    0    0    0 |    d = efkairia
+    0    0  181    1 1031  136    0    0 |    e = adiaforos
+    0    0    0    1    0  199    0    4 |    f = palia-eykairia
+    0    2    0    0    1    0   95    3 |    g = proin-pistos
+    8    0    0    0    0    9   15  110 |    h = proin-kalos
+

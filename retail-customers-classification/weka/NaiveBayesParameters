@@ -1,0 +1,86 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes -D
+Relation:     RFM
+Instances:    3000
+Attributes:   4
+              R
+              F
+              M
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                             Class
+Attribute               poly-kalos         pistos       avevaios       efkairia      adiaforos palia-eykairia   proin-pistos    proin-kalos
+                            (0.15)         (0.04)         (0.18)         (0.03)         (0.45)         (0.07)         (0.03)         (0.05)
+============================================================================================================================================
+R
+  '(-inf-112.5]'              459.0          112.0          541.0           96.0            1.0            1.0            1.0            1.0
+  '(112.5-284.5]'               1.0            1.0            1.0            1.0          906.0          151.0           94.0          136.0
+  '(284.5-inf)'                 1.0            1.0            1.0            1.0          445.0           55.0            9.0            8.0
+  [total]                     461.0          114.0          543.0           98.0         1352.0          207.0          104.0          145.0
+
+F
+  '(-inf-1.5]'                  1.0            1.0          424.0           37.0         1137.0          127.0            1.0            1.0
+  '(1.5-2.5]'                   1.0            1.0          118.0           60.0          214.0           79.0            1.0            1.0
+  '(2.5-3.5]'                  69.0           61.0            1.0            1.0            1.0            1.0           71.0           56.0
+  '(3.5-5.5]'                 109.0           44.0            1.0            1.0            1.0            1.0           27.0           60.0
+  '(5.5-10.5]'                136.0            9.0            1.0            1.0            1.0            1.0            6.0           25.0
+  '(10.5-inf)'                148.0            1.0            1.0            1.0            1.0            1.0            1.0            5.0
+  [total]                     464.0          117.0          546.0          101.0         1355.0          210.0          107.0          148.0
+
+M
+  '(-inf-297.5]'                1.0           18.0          395.0            1.0          984.0            1.0           25.0            1.0
+  '(297.5-771]'                 1.0           95.0          147.0            1.0          367.0            1.0           78.0            1.0
+  '(771-2088]'                146.0            1.0            1.0           84.0            1.0          179.0            1.0           94.0
+  '(2088-5112.5]'             157.0            1.0            1.0           11.0            1.0           25.0            1.0           42.0
+  '(5112.5-inf)'              158.0            1.0            1.0            3.0            1.0            3.0            1.0            9.0
+  [total]                     463.0          116.0          545.0          100.0         1354.0          209.0          106.0          147.0
+
+
+
+Time taken to build model: 0.06 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        2998               99.9333 %
+Incorrectly Classified Instances         2                0.0667 %
+Kappa statistic                          0.9991
+Mean absolute error                      0.0047
+Root mean squared error                  0.0187
+Relative absolute error                  2.5729 %
+Root relative squared error              6.1683 %
+Coverage of cases (0.95 level)         100      %
+Mean rel. region size (0.95 level)      13.725  %
+Total Number of Instances             3000     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     poly-kalos
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     pistos
+                 1,000    0,001    0,996      1,000    0,998      0,998    1,000     1,000     avevaios
+                 0,979    0,000    1,000      0,979    0,989      0,989    1,000     1,000     efkairia
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     adiaforos
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     palia-eykairia
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     proin-pistos
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     proin-kalos
+Weighted Avg.    0,999    0,000    0,999      0,999    0,999      0,999    1,000     1,000     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f    g    h   <-- classified as
+  458    0    0    0    0    0    0    0 |    a = poly-kalos
+    0  111    0    0    0    0    0    0 |    b = pistos
+    0    0  540    0    0    0    0    0 |    c = avevaios
+    0    0    2   93    0    0    0    0 |    d = efkairia
+    0    0    0    0 1349    0    0    0 |    e = adiaforos
+    0    0    0    0    0  204    0    0 |    f = palia-eykairia
+    0    0    0    0    0    0  101    0 |    g = proin-pistos
+    0    0    0    0    0    0    0  142 |    h = proin-kalos
+

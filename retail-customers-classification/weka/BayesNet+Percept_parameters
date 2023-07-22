@@ -1,0 +1,175 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.2 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a -B
+Relation:     RFM
+Instances:    3000
+Attributes:   4
+              R
+              F
+              M
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -4.72017764871214
+    Node 8    12.796462126342663
+    Node 9    -11.17249168359027
+    Node 10    -7.243690785500874
+    Node 11    -6.841210472751855
+    Node 12    -10.967961039859638
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    7.336887081007773
+    Node 8    -14.559732075362493
+    Node 9    -2.935115843948391
+    Node 10    -5.828541070570397
+    Node 11    -19.427827363335673
+    Node 12    -2.9390069665210747
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -2.4766422311685186
+    Node 8    -13.786218216561046
+    Node 9    9.7683334731583
+    Node 10    -13.245828113274506
+    Node 11    6.228071382014965
+    Node 12    -10.14887133945442
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -13.253122416724088
+    Node 8    5.908089310146275
+    Node 9    17.374243010998455
+    Node 10    -8.929533218711676
+    Node 11    -18.920470619890523
+    Node 12    -3.238866247708643
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -15.886983215287524
+    Node 8    -18.3436497783236
+    Node 9    13.88035867390118
+    Node 10    -2.231090049981823
+    Node 11    -3.2298206054404814
+    Node 12    15.937828990118646
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -27.289338936473452
+    Node 8    8.391719259842054
+    Node 9    17.56132516204476
+    Node 10    -2.1383858400194677
+    Node 11    -14.913422607169096
+    Node 12    13.258316429284845
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -0.9113801595738699
+    Node 8    -15.468188480165152
+    Node 9    -4.4243714467402
+    Node 10    -1.5262868851929414
+    Node 11    -23.1950882251111
+    Node 12    11.661029863839683
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -14.311094038902569
+    Node 8    10.132852582637366
+    Node 9    -9.460630500390836
+    Node 10    0.8581391306555389
+    Node 11    -9.685710827093079
+    Node 12    10.202408233118708
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    82.66849200344801
+    Attrib R    -0.08536998012449465
+    Attrib F    -2.144444538095764
+    Attrib M    86.86930290478222
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -59.33817156622752
+    Attrib R    0.143661681968591
+    Attrib F    -66.80160262306353
+    Attrib M    4.403356220965097
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    5.714884113859384
+    Attrib R    28.78658993090776
+    Attrib F    -1.812106864626037
+    Attrib M    -1.9425185622282206
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    -77.9152404178811
+    Attrib R    0.29558612526343453
+    Attrib F    -37.9152585591317
+    Attrib M    -40.10552877533114
+Sigmoid Node 12
+    Inputs    Weights
+    Threshold    12.514595480259029
+    Attrib R    47.99973747513431
+    Attrib F    -1.6381108672606586
+    Attrib M    -4.660027482619789
+Class poly-kalos
+    Input
+    Node 0
+Class pistos
+    Input
+    Node 1
+Class avevaios
+    Input
+    Node 2
+Class efkairia
+    Input
+    Node 3
+Class adiaforos
+    Input
+    Node 4
+Class palia-eykairia
+    Input
+    Node 5
+Class proin-pistos
+    Input
+    Node 6
+Class proin-kalos
+    Input
+    Node 7
+
+
+Time taken to build model: 12.69 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        2898               96.6    %
+Incorrectly Classified Instances       102                3.4    %
+Kappa statistic                          0.9533
+Mean absolute error                      0.0216
+Root mean squared error                  0.085 
+Relative absolute error                 11.8064 %
+Root relative squared error             28.1065 %
+Coverage of cases (0.95 level)          99.7667 %
+Mean rel. region size (0.95 level)      16.7    %
+Total Number of Instances             3000     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,978    0,004    0,976      0,978    0,977      0,973    1,000     0,998     poly-kalos
+                 0,901    0,004    0,901      0,901    0,901      0,897    0,999     0,960     pistos
+                 0,987    0,005    0,976      0,987    0,982      0,978    1,000     0,998     avevaios
+                 0,863    0,002    0,943      0,863    0,901      0,899    0,999     0,966     efkairia
+                 0,989    0,022    0,973      0,989    0,981      0,965    0,998     0,998     adiaforos
+                 0,833    0,005    0,924      0,833    0,876      0,869    0,995     0,949     palia-eykairia
+                 0,960    0,002    0,933      0,960    0,946      0,945    0,999     0,959     proin-pistos
+                 0,944    0,001    0,971      0,944    0,957      0,955    0,999     0,987     proin-kalos
+Weighted Avg.    0,966    0,012    0,966      0,966    0,966      0,956    0,999     0,991     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f    g    h   <-- classified as
+  448   10    0    0    0    0    0    0 |    a = poly-kalos
+   10  100    0    0    0    0    1    0 |    b = pistos
+    0    0  533    4    3    0    0    0 |    c = avevaios
+    0    0   13   82    0    0    0    0 |    d = efkairia
+    0    0    0    1 1334   14    0    0 |    e = adiaforos
+    0    0    0    0   34  170    0    0 |    f = palia-eykairia
+    0    0    0    0    0    0   97    4 |    g = proin-pistos
+    1    1    0    0    0    0    6  134 |    h = proin-kalos
+

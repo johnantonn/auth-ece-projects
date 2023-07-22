@@ -1,0 +1,40 @@
+@relation ApWinterFinal1_clustered
+
+@attribute Instance_number numeric
+@attribute 1 numeric
+@attribute 2 numeric
+@attribute 3 numeric
+@attribute Cluster {cluster0,cluster1,cluster2,cluster3}
+
+@data
+0,6.6827,11.8,2673.1,cluster0
+1,22.309,323.6,8923.6,cluster0
+2,41.16,1996.5,16464,cluster1
+3,49.928,1065.1,19971,cluster1
+4,54.17,1353.5,21668,cluster1
+5,65.462,1059.9,26185,cluster1
+6,66.551,1635.6,26620,cluster1
+7,68.934,427.4,27573,cluster1
+8,72.345,1989.2,28938,cluster1
+9,77.286,1049.8,30914,cluster1
+10,87.79,288,35116,cluster1
+11,96.113,579.5,38445,cluster1
+12,96.456,285.1,38582,cluster1
+13,105.15,362.3,42061,cluster1
+14,116.64,898.3,46654,cluster1
+15,117.74,705.9,47096,cluster1
+16,121.93,1114.7,48772,cluster1
+17,137.77,494.4,55107,cluster1
+18,140.61,1952.8,56246,cluster2
+19,142.51,2081.1,57006,cluster2
+20,145.33,377,58132,cluster1
+21,147.74,2012.6,59097,cluster2
+22,147.77,2134,59107,cluster2
+23,159.84,422.7,63936,cluster1
+24,164.49,412.3,65796,cluster1
+25,164.74,1380.5,65897,cluster3
+26,168.46,1449.1,67382,cluster3
+27,187.64,320.6,75056,cluster1
+28,204.86,1247.7,81944,cluster3
+29,212.4,1128.4,84960,cluster3
+30,274.48,1373.1,109790,?

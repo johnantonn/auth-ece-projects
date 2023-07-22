@@ -1,0 +1,61 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.KStar -B 20 -M a
+Relation:     RFM
+Instances:    3000
+Attributes:   4
+              R
+              F
+              M
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+KStar Beta Verion (0.1b).
+Copyright (c) 1995-97 by Len Trigg (trigg@cs.waikato.ac.nz).
+Java port to Weka by Abdelaziz Mahoui (am14@cs.waikato.ac.nz).
+
+KStar options : -B 20 -M a  
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        2855               95.1667 %
+Incorrectly Classified Instances       145                4.8333 %
+Kappa statistic                          0.9329
+Mean absolute error                      0.0302
+Root mean squared error                  0.1033
+Relative absolute error                 16.5054 %
+Root relative squared error             34.1473 %
+Coverage of cases (0.95 level)          99.6333 %
+Mean rel. region size (0.95 level)      20.1667 %
+Total Number of Instances             3000     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,978    0,006    0,970      0,978    0,974      0,969    0,998     0,979     poly-kalos
+                 0,829    0,001    0,968      0,829    0,893      0,892    0,999     0,974     pistos
+                 0,948    0,008    0,964      0,948    0,956      0,947    0,999     0,994     avevaios
+                 0,905    0,001    0,977      0,905    0,940      0,939    0,977     0,924     efkairia
+                 1,000    0,052    0,940      1,000    0,969      0,944    0,999     0,999     adiaforos
+                 0,912    0,003    0,959      0,912    0,935      0,930    0,997     0,979     palia-eykairia
+                 0,604    0,002    0,924      0,604    0,731      0,741    0,998     0,952     proin-pistos
+                 0,852    0,003    0,938      0,852    0,893      0,889    0,983     0,924     proin-kalos
+Weighted Avg.    0,952    0,026    0,952      0,952    0,950      0,936    0,997     0,985     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f    g    h   <-- classified as
+  448    3    0    2    0    0    0    5 |    a = poly-kalos
+    0   92   15    0    3    0    1    0 |    b = pistos
+    0    0  512    0   28    0    0    0 |    c = avevaios
+    4    0    4   86    0    1    0    0 |    d = efkairia
+    0    0    0    0 1349    0    0    0 |    e = adiaforos
+    0    0    0    0   15  186    0    3 |    f = palia-eykairia
+    0    0    0    0   40    0   61    0 |    g = proin-pistos
+   10    0    0    0    0    7    4  121 |    h = proin-kalos
+

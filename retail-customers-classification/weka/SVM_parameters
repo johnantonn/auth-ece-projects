@@ -1,0 +1,874 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -M -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -C 250007 -E 1.0"
+Relation:     RFM
+Instances:    3000
+Attributes:   4
+              R
+              F
+              M
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: poly-kalos, pistos
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.0114 * (normalized) R
+ +      -0.2893 * (normalized) F
+ +      -1.275  * (normalized) M
+ -       0.9534
+
+Number of kernel evaluations: 3456 (57.1% cached)
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                  Class
+Variable     poly-kalos
+=======================
+pred          -304.2383
+Intercept      -298.539
+
+
+Odds Ratios...
+                  Class
+Variable     poly-kalos
+=======================
+pred                  0
+
+
+Classifier for classes: poly-kalos, avevaios
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.0493 * (normalized) R
+ +     -13.8626 * (normalized) F
+ +      -7.6717 * (normalized) M
+ +       1.0179
+
+Number of kernel evaluations: 15759 (68.834% cached)
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                  Class
+Variable     poly-kalos
+=======================
+pred          -112.3544
+Intercept       69.9562
+
+
+Odds Ratios...
+                  Class
+Variable     poly-kalos
+=======================
+pred                  0
+
+
+Classifier for classes: poly-kalos, efkairia
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.0813 * (normalized) R
+ +      -2.3939 * (normalized) F
+ +      -0.1892 * (normalized) M
+ -       0.9083
+
+Number of kernel evaluations: 3161 (59.407% cached)
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                  Class
+Variable     poly-kalos
+=======================
+pred         -1970.7101
+Intercept    -1882.7481
+
+
+Odds Ratios...
+                  Class
+Variable     poly-kalos
+=======================
+pred                  0
+
+
+Classifier for classes: poly-kalos, adiaforos
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         8.5689 * (normalized) R
+ +      -4.5296 * (normalized) F
+ +      -2.6902 * (normalized) M
+ -       2.0149
+
+Number of kernel evaluations: 2115 (50.791% cached)
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                  Class
+Variable     poly-kalos
+=======================
+pred          -116.8227
+Intercept       55.8795
+
+
+Odds Ratios...
+                  Class
+Variable     poly-kalos
+=======================
+pred                  0
+
+
+Classifier for classes: poly-kalos, palia-eykairia
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         7.579  * (normalized) R
+ +      -2.5451 * (normalized) F
+ +      -0.8367 * (normalized) M
+ -       2.4552
+
+Number of kernel evaluations: 1108 (56.361% cached)
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                  Class
+Variable     poly-kalos
+=======================
+pred          -134.9601
+Intercept      -24.5034
+
+
+Odds Ratios...
+                  Class
+Variable     poly-kalos
+=======================
+pred                  0
+
+
+Classifier for classes: poly-kalos, proin-pistos
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         7.6384 * (normalized) R
+ +      -1.1263 * (normalized) F
+ +      -1.7128 * (normalized) M
+ -       2.4935
+
+Number of kernel evaluations: 1320 (54.151% cached)
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                  Class
+Variable     poly-kalos
+=======================
+pred           -150.565
+Intercept      -25.8485
+
+
+Odds Ratios...
+                  Class
+Variable     poly-kalos
+=======================
+pred                  0
+
+
+Classifier for classes: poly-kalos, proin-kalos
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         7.8985 * (normalized) R
+ +      -0.1715 * (normalized) F
+ +      -0.3499 * (normalized) M
+ -       2.6264
+
+Number of kernel evaluations: 1475 (55.371% cached)
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                  Class
+Variable     poly-kalos
+=======================
+pred          -132.7991
+Intercept      -25.5052
+
+
+Odds Ratios...
+                  Class
+Variable     poly-kalos
+=======================
+pred                  0
+
+
+Classifier for classes: pistos, avevaios
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0004 * (normalized) R
+ +      -3.1212 * (normalized) F
+ +      -0.2415 * (normalized) M
+ +       1.0485
+
+Number of kernel evaluations: 5265 (57.097% cached)
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+               Class
+Variable      pistos
+====================
+pred         -983.05
+Intercept   965.7596
+
+
+Odds Ratios...
+               Class
+Variable      pistos
+====================
+pred               0
+
+
+Classifier for classes: pistos, efkairia
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.6127 * (normalized) R
+ +      -2.7495 * (normalized) F
+ +       1.6754 * (normalized) M
+ -       0.8999
+
+Number of kernel evaluations: 1605 (57.995% cached)
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                Class
+Variable       pistos
+=====================
+pred         -22.8141
+Intercept    -19.7936
+
+
+Odds Ratios...
+                Class
+Variable       pistos
+=====================
+pred                0
+
+
+Classifier for classes: pistos, adiaforos
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         7.2482 * (normalized) R
+ +      -2.0702 * (normalized) F
+ +      -0.1693 * (normalized) M
+ -       1.4755
+
+Number of kernel evaluations: 1424 (57.77% cached)
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                 Class
+Variable        pistos
+======================
+pred         -140.9034
+Intercept     103.6143
+
+
+Odds Ratios...
+                 Class
+Variable        pistos
+======================
+pred                 0
+
+
+Classifier for classes: pistos, palia-eykairia
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         6.4848 * (normalized) R
+ +      -1.303  * (normalized) F
+ +       0.6211 * (normalized) M
+ -       1.8715
+
+Number of kernel evaluations: 922 (53.174% cached)
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                Class
+Variable       pistos
+=====================
+pred         -158.983
+Intercept     21.1771
+
+
+Odds Ratios...
+                Class
+Variable       pistos
+=====================
+pred                0
+
+
+Classifier for classes: pistos, proin-pistos
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         6.476  * (normalized) R
+ +      -0.0692 * (normalized) F
+ +       0.0077 * (normalized) M
+ -       1.7989
+
+Number of kernel evaluations: 313 (48.093% cached)
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                 Class
+Variable        pistos
+======================
+pred         -176.8003
+Intercept      44.2232
+
+
+Odds Ratios...
+                 Class
+Variable        pistos
+======================
+pred                 0
+
+
+Classifier for classes: pistos, proin-kalos
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         6.4529 * (normalized) R
+ +       0.6491 * (normalized) F
+ +       1.3068 * (normalized) M
+ -       1.7866
+
+Number of kernel evaluations: 581 (48.901% cached)
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                 Class
+Variable        pistos
+======================
+pred         -162.8485
+Intercept      42.0923
+
+
+Odds Ratios...
+                 Class
+Variable        pistos
+======================
+pred                 0
+
+
+Classifier for classes: avevaios, efkairia
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0007 * (normalized) R
+ +       0.1296 * (normalized) F
+ +       1.5769 * (normalized) M
+ -       1.0107
+
+Number of kernel evaluations: 11126 (75.947% cached)
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                  Class
+Variable       avevaios
+=======================
+pred         -2132.9706
+Intercept    -2114.9682
+
+
+Odds Ratios...
+                  Class
+Variable       avevaios
+=======================
+pred                  0
+
+
+Classifier for classes: avevaios, adiaforos
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        10.9858 * (normalized) R
+ +      -0.1914 * (normalized) F
+ +      -0.0732 * (normalized) M
+ -       3.1459
+
+Number of kernel evaluations: 3948 (52.388% cached)
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                Class
+Variable     avevaios
+=====================
+pred         -98.4088
+Intercept     25.1491
+
+
+Odds Ratios...
+                Class
+Variable     avevaios
+=====================
+pred                0
+
+
+Classifier for classes: avevaios, palia-eykairia
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         8.5674 * (normalized) R
+ +       0.2121 * (normalized) F
+ +       1.101  * (normalized) M
+ -       3.1578
+
+Number of kernel evaluations: 2140 (55.286% cached)
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                 Class
+Variable      avevaios
+======================
+pred         -121.0701
+Intercept       -56.03
+
+
+Odds Ratios...
+                 Class
+Variable      avevaios
+======================
+pred                 0
+
+
+Classifier for classes: avevaios, proin-pistos
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         8.0358 * (normalized) R
+ +       2.2121 * (normalized) F
+ +       0.1864 * (normalized) M
+ -       3.043 
+
+Number of kernel evaluations: 809 (54.19% cached)
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                 Class
+Variable      avevaios
+======================
+pred         -123.4559
+Intercept     -58.0738
+
+
+Odds Ratios...
+                 Class
+Variable      avevaios
+======================
+pred                 0
+
+
+Classifier for classes: avevaios, proin-kalos
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         7.8428 * (normalized) R
+ +       3.2995 * (normalized) F
+ +       1.8787 * (normalized) M
+ -       2.9721
+
+Number of kernel evaluations: 1408 (53.577% cached)
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                 Class
+Variable      avevaios
+======================
+pred         -128.6789
+Intercept     -59.3383
+
+
+Odds Ratios...
+                 Class
+Variable      avevaios
+======================
+pred                 0
+
+
+Classifier for classes: efkairia, adiaforos
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         7.3554 * (normalized) R
+ +      -0.3333 * (normalized) F
+ +      -1.3098 * (normalized) M
+ -       1.5192
+
+Number of kernel evaluations: 1104 (55.84% cached)
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                 Class
+Variable      efkairia
+======================
+pred         -140.4169
+Intercept      100.859
+
+
+Odds Ratios...
+                 Class
+Variable      efkairia
+======================
+pred                 0
+
+
+Classifier for classes: efkairia, palia-eykairia
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         6.5124 * (normalized) R
+ +      -0.0152 * (normalized) F
+ +      -0.2398 * (normalized) M
+ -       1.8686
+
+Number of kernel evaluations: 713 (50.726% cached)
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                 Class
+Variable      efkairia
+======================
+pred         -158.6808
+Intercept      23.7823
+
+
+Odds Ratios...
+                 Class
+Variable      efkairia
+======================
+pred                 0
+
+
+Classifier for classes: efkairia, proin-pistos
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         6.3364 * (normalized) R
+ +       1.348  * (normalized) F
+ +      -0.8783 * (normalized) M
+ -       1.8275
+
+Number of kernel evaluations: 569 (59.674% cached)
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                 Class
+Variable      efkairia
+======================
+pred         -178.1806
+Intercept      28.7663
+
+
+Odds Ratios...
+                 Class
+Variable      efkairia
+======================
+pred                 0
+
+
+Classifier for classes: efkairia, proin-kalos
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         6.2507 * (normalized) R
+ +       2.0455 * (normalized) F
+ +       0.3267 * (normalized) M
+ -       1.7412
+
+Number of kernel evaluations: 736 (56.833% cached)
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                 Class
+Variable      efkairia
+======================
+pred         -168.5286
+Intercept      44.4512
+
+
+Odds Ratios...
+                 Class
+Variable      efkairia
+======================
+pred                 0
+
+
+Classifier for classes: adiaforos, palia-eykairia
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0008 * (normalized) R
+ +       0.1411 * (normalized) F
+ +       2.5509 * (normalized) M
+ -       1.0195
+
+Number of kernel evaluations: 122374 (76.948% cached)
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                  Class
+Variable      adiaforos
+=======================
+pred         -2031.8668
+Intercept    -2011.6153
+
+
+Odds Ratios...
+                  Class
+Variable      adiaforos
+=======================
+pred                  0
+
+
+Classifier for classes: adiaforos, proin-pistos
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0009 * (normalized) R
+ +       2.2879 * (normalized) F
+ +       0.1332 * (normalized) M
+ -       1.0348
+
+Number of kernel evaluations: 32864 (63.968% cached)
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                  Class
+Variable      adiaforos
+=======================
+pred         -1517.5773
+Intercept    -1498.8639
+
+
+Odds Ratios...
+                  Class
+Variable      adiaforos
+=======================
+pred                  0
+
+
+Classifier for classes: adiaforos, proin-kalos
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0558 * (normalized) R
+ +       5.4242 * (normalized) F
+ +       4.3704 * (normalized) M
+ -       1.0654
+
+Number of kernel evaluations: 33673 (59.447% cached)
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                 Class
+Variable     adiaforos
+======================
+pred         -245.8078
+Intercept    -227.8767
+
+
+Odds Ratios...
+                 Class
+Variable     adiaforos
+======================
+pred                 0
+
+
+Classifier for classes: palia-eykairia, proin-pistos
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0958 * (normalized) R
+ +       2.8292 * (normalized) F
+ +      -1.1978 * (normalized) M
+ -       0.9352
+
+Number of kernel evaluations: 3149 (73.099% cached)
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                      Class
+Variable     palia-eykairia
+===========================
+pred              -294.9618
+Intercept         -277.5636
+
+
+Odds Ratios...
+                      Class
+Variable     palia-eykairia
+===========================
+pred                      0
+
+
+Classifier for classes: palia-eykairia, proin-kalos
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -1.4793 * (normalized) R
+ +       6.4091 * (normalized) F
+ +       2.0293 * (normalized) M
+ +       0.0017
+
+Number of kernel evaluations: 1870 (52.932% cached)
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                      Class
+Variable     palia-eykairia
+===========================
+pred                -5.4982
+Intercept           -2.8593
+
+
+Odds Ratios...
+                      Class
+Variable     palia-eykairia
+===========================
+pred                 0.0041
+
+
+Classifier for classes: proin-pistos, proin-kalos
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.0817 * (normalized) R
+ +       0.5241 * (normalized) F
+ +       1.609  * (normalized) M
+ +       0.8689
+
+Number of kernel evaluations: 2015 (62.463% cached)
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                    Class
+Variable     proin-pistos
+=========================
+pred            -105.5638
+Intercept        100.6761
+
+
+Odds Ratios...
+                    Class
+Variable     proin-pistos
+=========================
+pred                    0
+
+
+
+
+Time taken to build model: 1.45 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        2883               96.1    %
+Incorrectly Classified Instances       117                3.9    %
+Kappa statistic                          0.9467
+Mean absolute error                      0.0181
+Root mean squared error                  0.0848
+Relative absolute error                  9.8795 %
+Root relative squared error             28.041  %
+Coverage of cases (0.95 level)          99.8    %
+Mean rel. region size (0.95 level)      15.8167 %
+Total Number of Instances             3000     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,976    0,007    0,963      0,976    0,970      0,964    0,999     0,995     poly-kalos
+                 0,847    0,003    0,913      0,847    0,879      0,875    0,997     0,933     pistos
+                 1,000    0,004    0,984      1,000    0,992      0,990    1,000     1,000     avevaios
+                 0,926    0,001    0,978      0,926    0,951      0,950    1,000     0,988     efkairia
+                 0,996    0,004    0,996      0,996    0,996      0,992    1,000     1,000     adiaforos
+                 0,951    0,006    0,915      0,951    0,933      0,928    0,998     0,968     palia-eykairia
+                 0,950    0,016    0,671      0,950    0,787      0,791    0,997     0,926     proin-pistos
+                 0,570    0,003    0,900      0,570    0,698      0,706    0,992     0,864     proin-kalos
+Weighted Avg.    0,961    0,005    0,964      0,961    0,960      0,957    0,999     0,985     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f    g    h   <-- classified as
+  447    9    0    2    0    0    0    0 |    a = poly-kalos
+   17   94    0    0    0    0    0    0 |    b = pistos
+    0    0  540    0    0    0    0    0 |    c = avevaios
+    0    0    7   88    0    0    0    0 |    d = efkairia
+    0    0    2    0 1343    4    0    0 |    e = adiaforos
+    0    0    0    0    6  194    0    4 |    f = palia-eykairia
+    0    0    0    0    0    0   96    5 |    g = proin-pistos
+    0    0    0    0    0   14   47   81 |    h = proin-kalos
+

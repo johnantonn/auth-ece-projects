@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html ng-app="insight-app">
+	<head>
+		<title> Insight </title>
+		<meta name = "viewport" content="width=device-width, initial-scale=1.0">
+		<link href = "css/bootstrap.min.css" rel="stylesheet">
+		<link href = "css/jqcloud.css" rel="stylesheet">
+		<style>body{ 
+		margin-bottom: 80px;
+		<!--background-image:url("images/back.png");
+		background-repeat:no-repeat;
+		background-size:contain;
+		background-position:center;-->
+		}
+		</style>
+		<style>[ng\:cloak], [ng-cloak], .ng-cloak {display: none !important;}</style>
+	</head>
+	<body class="ng-cloak" ng-controller="MainCtrl as ctrl">
+		
+		<div class="navbar navbar-inverse navbar-static-top">
+			<div class="container">
+			
+				<a href="index.html" class="navbar-brand">Insight - Interactive Question Answering using Topic Models</a>
+				
+				<!--Main menu Navigation bar-->
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">	
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<div class="collapse navbar-collapse navHeaderCollapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="#">References</a></li>	
+						<li><a href="#">About</a></li>
+						<li><a href="#contact" data-toggle="modal">Contact</a></li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+		
+		<!-- Welcome - Jumbotron container -->
+		<div class="container" ng-show="ctrl.showQuery">
+			<div style="background:transparent !important" class="jumbotron text-center">
+				<h1>Insight</h1>
+				<h4>Insight is a QA system that incorporates Content Analysis </br> and Topic Modeling techniques to provide answers to user queries</h4>
+				<form role="form" ng-submit="ctrl.submitQuery()" name="queryForm">
+					<div class="form-group">
+						<label for="inputdefault"></label>
+							<input class="form-control" id="inputdefault" type="text" ng-model="ctrl.query" required ng-minlength="4"></input>	
+						</div>
+						<input class="btn btn-info" type="submit" value="Search" ng-disabled="queryForm.$invalid"></input>
+				</form>
+			</div>
+		</div>
+		
+		<!-- Step 2 - Document level topic word-clouds -->
+		<div class="container" ng-show="ctrl.showDocTopics">
+			<h2>Document level topics</h2>
+			<p>The following word clouds were found to be relative to your query. Choose one or more of them</p>
+			<div class="row">	
+				<div class="col-md-4" ng-repeat="topic in ctrl.docTopics" >
+					<jqcloud ng-click="ctrl.toggleId(topic.id, ctrl.docTopicIds)" words="topic.topWordsList" colors="{{ctrl.colors}}" width="400" height="250" delay="10"></jqcloud>	
+				</div>			
+			</div>
+			<!--{{ctrl.colors}}-->
+			<!--{{ctrl.docIds}}-->
+			<br/>
+			<input ng-click = "ctrl.submitDocTopics()" class="btn btn-info" type="submit" value="Submit">
+		</div>
+					
+		<!-- Step 3 - Paragraph level topic word-clouds -->
+		<div class="container" ng-show="ctrl.showParTopics">
+			<h2>Paragraph level topics</h2>
+			<p>The following word clouds were found to be relative to your query. Choose one or more of them</p>
+			<div class="row">	
+				<div class="col-md-4" ng-repeat="topic in ctrl.parTopics" >
+					<jqcloud ng-click="ctrl.toggleId(topic.id, ctrl.parTopicIds)" words="topic.topWordsList" colors="{{ctrl.colors}}" width="400" height="250" delay="10"></jqcloud>
+				</div>					
+			</div>
+			<input ng-click = "ctrl.submitParTopics()" class="btn btn-info" type="submit" value="Submit">	
+		</div>
+		
+		<!-- Step 4 - Final paragraph snippets -->
+		<div class="container" ng-show="ctrl.showParagraphs">
+			<h2>Most relative snippets</h2>
+			<h4>The following paragraphs were found to be relative to your query</h4>
+			</br>
+			<div ng-repeat="par in ctrl.paragraphs" >	
+				<h4><a href={{par.url}} target="_blank">{{par.url}}</a></h4>
+				{{par.text}}
+			</div>
+		</div>
+		
+		<!-- Footer navigation bar -->
+		<div class="navbar navbar-default navbar-fixed-bottom">
+			<div class="container">
+				<p class="navbar-text pull-left">Developed in 2015 by Ioannis Antoniadis</p>
+			</div>
+		</div>
+		
+		<!-- Modal dialogue for Contact tab-->
+		<div class="modal fade" id="contact" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<form class="form-horizontal">
+						<div class="modal-header">
+							<h3>Contact me</h3>
+						</div>
+						<div class="modal-body">
+							<div class="form-group">
+								<label for ="contact-name" class="col-lg-2 control-label">Name</label>
+								<div class="col-lg-10">
+									<input type="text" class="form-control" id="contact-name" placeholder="Full Name"></input>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for ="contact-email" class="col-lg-2 control-label">email</label>
+								<div class="col-lg-10">
+									<input type="email" class="form-control" id="contact-email" placeholder="you@example.com"></input>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for ="contact-message" class="col-lg-2 control-label">Message</label>
+								<div class="col-lg-10">
+									<textarea class="form-control" rows="8"></textarea>
+								</div>
+							</div>
+						<div class="modal-footer">
+							<a class="btn btn-default" data-dismiss="modal">Close</a>
+							<button class="btn btn-primary" type="submit">Submit</button> 
+		
+						</div>
+					</form>
+				</div>	
+			</div>
+		</div>
+		
+	<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.js"></script>	
+	<script src = "http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src = "js/jqcloud.min.js"></script>
+	<script src = "js/angular-jqcloud.js"></script>
+	<script src = "js/bootstrap.js"></script>
+	<script src = "js/insight-app.js"></script>
+	
+	</body>
+</html>
